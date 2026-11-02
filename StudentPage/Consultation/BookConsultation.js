@@ -36,3 +36,12 @@ function toggleSidebar() {
         overlay.classList.toggle('active');
     }
 }
+function selectProf(element) {
+    // 1. Remove active class from all prof cards
+    const cards = document.querySelectorAll('.prof-card');
+    cards.forEach(card => {
+        card.classList.remove('active');
+    });
+    // 2. Add active class to the clicked card
+    element.classList.add('active');
+}

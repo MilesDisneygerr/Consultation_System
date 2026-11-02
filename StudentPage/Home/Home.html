@@ -20,9 +20,9 @@
         <ul class="nav-menu">
             <li class="nav-item active"><a href="../Home/Home.html">🏠 Home</a></li>
             <li class="nav-item"><a href="../Consultation/BookConsultation.html">📅 Book Consultation</a></li>
-            <li class="nav-item"><a href="../Appointments/Appointments.html">📋 My Appointments</a></li>
+            <li class="nav-item"><a href="../Appointment/Appointment.html">📋 My Appointments</a></li>
             <li class="nav-item"><a href="../Queue/Queue.html">⏳ Consultation Queue</a></li>
-            <li class="nav-item"><a href="../Help/Help.html">❓ Help & Support</a></li>
+            <li class="nav-item"><a href="../Help/help.html">❓ Help & Support</a></li>
             <li class="nav-item" style="margin-top: auto;"><a href="../../login/login.html">🚪 Logout</a></li>
         </ul>
     </div>
@@ -49,23 +49,25 @@
 
             <!-- Dashboard Feature Cards -->
             <div class="cards-grid">
-                <div class="card">
-                    <div class="card-icon">📅</div>
-                    <div class="card-title">Book a Consultation</div>
-                    <div class="card-desc">Choose a professor/instructor and pick an available time slot that works for you.</div>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon">📋</div>
-                    <div class="card-title">My Appointments</div>
-                    <div class="card-desc">View your upcoming scheduled consultations and past completed history records.</div>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon">⏳</div>
-                    <div class="card-title">Consultation Queue</div>
-                    <div class="card-desc">Check your current live position in the queue and estimated waiting time.</div>
-                </div>
+                    <div class="card" onclick="window.location.href='../Consultation/BookConsultation.html'">
+                        <div class="card-icon">📅</div>
+                        <div class="card-title">Book a Consultation</div>
+                        <div class="card-desc">Choose a professor/instructor and pick an available time slot that works for you.</div>
+                    </div>
+                </a>
+                
+                    <div class="card" onclick="window.location.href='../Appointment/Appointment.html'">
+                        <div class="card-icon">📋</div>
+                        <div class="card-title">My Appointments</div>
+                        <div class="card-desc">View your upcoming scheduled consultations and past completed history records.</div>
+                    </div>
+                </a>
+                    <div class="card" onclick="window.location.href='../Queue/Queue.html'">
+                        <div class="card-icon">⏳</div>
+                        <div class="card-title">Consultation Queue</div>
+                        <div class="card-desc">Check your current live position in the queue and estimated waiting time.</div>
+                    </div>
+                </a>
             </div>
 
             <!-- Active Queue Banner -->
