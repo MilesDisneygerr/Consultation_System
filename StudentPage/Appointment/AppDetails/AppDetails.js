@@ -25,12 +25,12 @@ document.querySelectorAll(".downloadBtn").forEach(button => {
 
         doc.setFontSize(12);
         doc.text("Professor Name: " + professor, 20, 40);
-        doc.text("Student Name: " + name, 20, 50);
-        doc.text("Course: " + course, 20, 60);
-        doc.text("Date: " + date, 20, 65);
-        doc.text("Time: " + time, 20, 70);
-        doc.text("School: " + school, 20, 75);
-        doc.text("Consultation Topic: " + topic, 20, 80);
+        doc.text("Student Name: " + name, 20, 45);
+        doc.text("Course: " + course, 20, 50);
+        doc.text("Date: " + date, 20, 55);
+        doc.text("Time: " + time, 20, 60);
+        doc.text("School: " + school, 20, 65);
+        doc.text("Consultation Topic: " + topic, 20, 70);
 
         // Download PDF
         doc.save("Past Appointment_" + professor + "_" + date + ".pdf");
