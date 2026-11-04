@@ -10,7 +10,10 @@ document.querySelectorAll(".downloadBtn").forEach(button => {
         const professor = card.querySelector(".professorname").textContent;
         const name = card.querySelector(".name").textContent;
         const course = card.querySelector(".course").textContent;
+        const date = card.querySelector(".date").textContent;
+        const time = card.querySelector(".time").textContent;
         const school = card.querySelector(".school").textContent;
+        const topic = card.querySelector(".topic").textContent;
 
         // Create PDF
         const { jsPDF } = window.jspdf;
@@ -24,10 +27,13 @@ document.querySelectorAll(".downloadBtn").forEach(button => {
         doc.text("Professor Name: " + professor, 20, 40);
         doc.text("Student Name: " + name, 20, 50);
         doc.text("Course: " + course, 20, 60);
-        doc.text("School: " + school, 20, 70);
+        doc.text("Date: " + date, 20, 65);
+        doc.text("Time: " + time, 20, 70);
+        doc.text("School: " + school, 20, 75);
+        doc.text("Consultation Topic: " + topic, 20, 80);
 
         // Download PDF
-        doc.save("Appointment_" + professor + ".pdf");
+        doc.save("Past Appointment_" + professor + "_" + date + ".pdf");
 
     });
 
