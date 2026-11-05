@@ -1,7 +1,7 @@
 // Download PDF for each appointment
 document.querySelectorAll(".downloadBtn").forEach(button => {
 
-    button.addEventListener("click", function() {
+    button.addEventListener("click", function () {
 
         // Get the appointment card
         const card = this.closest(".card");
@@ -17,17 +17,56 @@ document.querySelectorAll(".downloadBtn").forEach(button => {
         const { jsPDF } = window.jspdf;
         const doc = new jsPDF();
 
-        // PDF Content
-        doc.setFontSize(18);
-        doc.setFont("New Roman");
-        doc.text("Appointment Details", 20, 20);
 
+
+        // Set Times New Roman font
+        doc.setFont("times", "normal");
+
+        // Header
+        doc.setFont("times", "bold");
+        doc.setFontSize(20);
+
+        doc.text("COLLEGE OF COMPUTER STUDIES", 105, 20, {
+            align: "center"
+        });
+
+        doc.setFont("times", "normal");
+        doc.setFontSize(10);
+
+        doc.text("STUDENT-FACULTY CONSULTATION SCHEDULING SYSTEM", 105, 28, {
+            align: "center"
+        });
+
+        // Divider
+        doc.line(20, 35, 190, 35);
+
+        // Student Information
+        doc.setFont("times", "bold");
+        doc.setFontSize(13);
+
+        doc.text("CONSULTATION INFORMATION", 10, 50);
+
+        doc.setFont("times", "normal");
         doc.setFontSize(12);
-        doc.text("Professor Name: " + professor, 20, 40);
-        doc.text("Student Name: " + name, 20, 45);
-        doc.text("Date: " + date, 20, 55);
-        doc.text("Time: " + time, 20, 60);
-        doc.text("Consultation Topic: " + topic, 20, 70);
+
+
+        doc.text("Student Name: " + name, 25, 60);
+        doc.text("Professor Name: " + professor, 25, 70);
+        doc.text("Date: " + date, 25, 80);
+        doc.text("Time: " + time, 25, 90);
+        doc.text("Topic: " + topic, 25, 100);
+
+        // Footer
+        doc.line(20, 265, 190, 265);
+
+        doc.setFontSize(10);
+
+        doc.text(
+            "Consultation University",
+            105, 273,
+            { align: "center" }
+        );
+
 
         // Download PDF
         doc.save("Past Appointment_" + professor + "_" + date + ".pdf");
