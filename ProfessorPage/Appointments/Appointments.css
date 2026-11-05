@@ -148,8 +148,6 @@
             border-radius: 10px;
         }
 
-
-
         .card-number {
             font-size: 2rem;
             font-weight: 600;
@@ -167,6 +165,13 @@
         .card:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #2d3748;
+            margin-bottom: 10px;
         }
 
         /* ==========================================
