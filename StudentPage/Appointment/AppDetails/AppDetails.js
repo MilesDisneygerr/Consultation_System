@@ -19,6 +19,7 @@ document.querySelectorAll(".downloadBtn").forEach(button => {
 
         // PDF Content
         doc.setFontSize(18);
+        doc.setFont("New Roman");
         doc.text("Appointment Details", 20, 20);
 
         doc.setFontSize(12);
