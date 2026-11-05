@@ -19,7 +19,7 @@ searchInput.addEventListener("input", function () {
     const searchValue = this.value.toLowerCase();
 
     const rows = document.querySelectorAll(
-        "#appointmentTable"
+        "#request"
     );
 
     rows.forEach(row => {
@@ -47,6 +47,7 @@ menuItems.forEach(item => {
     });
 });
 
+// approve, reject, modify
 let modal = document.getElementById("modal");
 
 let rejectSection = document.getElementById("rejectSection");
