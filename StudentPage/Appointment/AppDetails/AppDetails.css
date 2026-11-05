@@ -127,14 +127,22 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+            box-shadow: 0 2px 4px rgba(121, 22, 22, 0.02);
             transition: transform 0.2s, box-shadow 0.2s;
             cursor: pointer;
+            border: 1px solid #1586ff;
+            border-radius: 10px;
         }
 
         .card:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 550;
+            margin-bottom: 10px;
         }
 
         .downloadBtn {
@@ -147,7 +155,17 @@
             width: 50%;
         }
 
-  
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            color: #000000;
+        }
+        
+        div {
+            margin-bottom: 8px;
+        }
+
+
 
         /* Desktop Defaults for Mobile Elements */
         .hamburger-btn,
