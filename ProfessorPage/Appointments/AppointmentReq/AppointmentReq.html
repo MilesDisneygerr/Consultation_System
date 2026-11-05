@@ -19,12 +19,12 @@
             <button class="close-sidebar-btn" onclick="toggleSidebar()">✕</button>
         </div>
         <ul class="nav-menu">
-            <li class="nav-item active"><a href="../Dashboard/Dashboard.html">🏠 Home</a></li>
-            <li class="nav-item"><a href="../Availability/MyAvailability.html">📅 Availability</a></li>
-            <li class="nav-item"><a href="../Appointments/Appointments.html">📨 Appointments</a></li>
-            <li class="nav-item"><a href="../Queue/QueueMng.html">👨‍🎓 Consultation Queue</a></li>
-            <li class="nav-item"><a href="../History/History.html">📋 Consultation History</a></li>
-            <li class="nav-item" style="margin-top: auto;"><a href="../../LOGIN/login.html">🚪 Logout</a></li>
+            <li class="nav-item active"><a href="../../Dashboard/Dashboard.html">🏠 Home</a></li>
+            <li class="nav-item"><a href="../../Availability/MyAvailability.html">📅 Availability</a></li>
+            <li class="nav-item"><a href="../../Appointments/Appointments.html">📨 Appointments</a></li>
+            <li class="nav-item"><a href="../../Queue/QueueMng.html">👨‍🎓 Consultation Queue</a></li>
+            <li class="nav-item"><a href="../../History/History.html">📋 Consultation History</a></li>
+            <li class="nav-item" style="margin-top: auto;"><a href="../../../login/login.html">🚪 Logout</a></li>
         </ul>
     </div>
 
@@ -62,6 +62,20 @@
                 <div class="card request-card" id="request">
                     <h3>Appointment 1</h3>
                     <p><strong>Student Name:</strong> Jake</p>
+                    <p><strong>Date: </strong><span class="date">November 7, 2026</span></p>
+                    <p><strong>Time: </strong><span class="time">11:30 AM</span></p>
+                    <p><strong>Topic: </strong><span class="topic">Java OOP Concepts</span></p>
+                    <p><strong>Status: </strong><span class="status">Pending</span></p>
+
+                    <p class="reason"></p>
+                    <button type="button" class="approve">Approve</button>
+                    <button type="button" class="reject">Reject</button>
+                    <button type="button" class="modify">Modify</button>
+                </div>
+
+                <div class="card request-card" id="request">
+                    <h3>Appointment 2</h3>
+                    <p><strong>Student Name:</strong> Andrei</p>
                     <p><strong>Date: </strong><span class="date">November 7, 2026</span></p>
                     <p><strong>Time: </strong><span class="time">11:30 AM</span></p>
                     <p><strong>Topic: </strong><span class="topic">Java OOP Concepts</span></p>
