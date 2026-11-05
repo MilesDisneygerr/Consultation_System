@@ -5,7 +5,7 @@ searchInput.addEventListener("input", function() {
     const searchValue = this.value.toLowerCase();
 
     const rows = document.querySelectorAll(
-        "#appointmentTable tr"
+        "#appointmentTable"
     );
 
     rows.forEach(row => {

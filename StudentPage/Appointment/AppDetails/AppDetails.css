@@ -141,7 +141,7 @@
 
         .card-title {
             font-size: 1.2rem;
-            font-weight: 550;
+            font-weight: 500;
             margin-bottom: 10px;
         }
 
@@ -160,12 +160,6 @@
             margin-bottom: 15px;
             color: #000000;
         }
-        
-        div {
-            margin-bottom: 8px;
-        }
-
-
 
         /* Desktop Defaults for Mobile Elements */
         .hamburger-btn,
