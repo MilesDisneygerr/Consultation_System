@@ -131,7 +131,6 @@ body {
 
 .card {
     width: 350px;
-    /* Forces the card to stay compact instead of stretching to 1fr */
     padding: 20px;
     background: #ffffff;
     border-radius: 10px;

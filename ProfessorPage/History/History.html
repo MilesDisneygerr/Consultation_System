@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation University - Faculty Portal</title>
+    <link rel="stylesheet" href="History.css">
+</head>
+
+<body>
+    <!-- Dark Overlay for Mobile Slide-out Drawer -->
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+        <div class="brand">
+            <span>🎓 Consultation Univ.</span>
+            <!-- Close icon for mobile menu -->
+            <button class="close-sidebar-btn" onclick="toggleSidebar()">✕</button>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item active"><a href="../Dashboard/Dashboard.html">🏠 Home</a></li>
+            <li class="nav-item"><a href="../Availability/MyAvailability.html">📅 Availability</a></li>
+            <li class="nav-item"><a href="../Appointments/Appointments.html">📨 Appointments</a></li>
+            <li class="nav-item"><a href="../Queue/QueueMng.html">👨‍🎓 Consultation Queue</a></li>
+            <li class="nav-item"><a href="../History/History.html">📋 Consultation History</a></li>
+            <li class="nav-item" style="margin-top: auto;"><a href="../../login/login.html">🚪 Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="topbar-left">
+                <button class="hamburger-btn" onclick="toggleSidebar()">☰</button>
+                <strong>Faculty Consultation Portal</strong>
+            </div>
+            <div class="user-profile">
+                <span>John Cedric Asprer</span>
+                <div class="avatar">JA</div>
+            </div>
+        </div>
+
+        <div class="dashboard-container">
+            <div class="header-title">
+                <h1>Appointments</h1>
+                <p>View and monitor student consultation requests and their appointment details.</p>
+            </div>
+
+            <h2>Past Appointments</h2>
+
+                        <!-- Search Bar -->
+            <div class="cards-grid">
+                <div class="cards">
+                    <div class="search-container">
+                        <input type="text" class="search" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-grid">
+
+                <div class="card" id="historytable">
+                    <div><strong>Student Name:</strong> <span class="name">John Carlo</span></div>
+                    <div><strong>Date & Time:</strong> <span class="date">October 10, 2026</span> <span class="time">10:30 AM</span></div>
+                    <div><strong>Consultation Topic:</strong> <span class="topic"> Discussion about Database Management and SQL Queries.</span></div>
+                    <button class="downloadBtn" type="button">Download PDF</button>
+                </div>
+
+                <div class="card" id="historytable">
+                    <div><strong>Professor Name:</strong> <span class="professorname">Kim</span></div>
+                    <div><strong>Name:</strong> <span class="name">John Carlo</span></div>
+                    <div><strong>Date & Time:</strong> <span class="date">October 28, 2026</span> <span class="time">10:00 AM</span></div>
+                    <div><strong>Consultation Topic:</strong> <span class="topic"> Assistance with Web Development and HTML/CSS.</span></div>
+                    <button class="downloadBtn" type="button">Download PDF</button>
+                </div>
+
+                <div class="card" id="historytable">
+                    <div><strong>Professor Name:</strong> <span class="professorname">Dungo</span></div>
+                    <div><strong>Name:</strong> <span class="name">John Carlo</span></div>
+                    <div><strong>Date & Time:</strong> <span class="date">September 29, 2026</span> <span class="time">1:00 PM</span></div>
+                    <div><strong>Consultation Topic:</strong> <span class="topic"> Guidance on Java Programming and Object-Oriented Concepts.</span></div>
+                    <button class="downloadBtn" type="button">Download PDF</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jsPDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="History.js"></script>
+</body>
