@@ -1,22 +1,3 @@
-// viewing of appointments
-document.querySelectorAll(".view-btn").forEach(button => {
-    button.addEventListener("click", function() {
-        const student = this.dataset.student;
-
-        alert("Viewing appointment details for " + student);
-    });
-});
-
-// quick actions
-document.querySelectorAll(".action-btn").forEach(button => {
-    button.addEventListener("click", function() {
-        const action = this.dataset.action;
-
-        alert("Opening " + action + "...");
-    });
-});
-
-
 // searching students
 const searchInput = document.querySelector(".search");
 
